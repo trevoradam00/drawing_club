@@ -1,0 +1,19 @@
+<div class="head users">
+<%= render 'common/title', title: "Users" %>
+</div>
+
+<% @users.each do |user| %>
+	
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3">
+			<p class="user-list">
+			<span class="name">
+				<i class="glyphicon glyphicon-user"></i> 
+				<%= link_to user.name, user_path(user) %>
+			</span> 
+			<span class="user-email right"><%= user.email %></p></span>
+			</p>
+		</div>
+	</div>
+	
+<% end %>

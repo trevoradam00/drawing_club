@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Drawing Club</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+
+<div class="header">
+	<div class="back-top"></div>
+	
+	<div class="nav-buttons">
+		<div class="nav-btn"><%= link_to "View Users", users_path, class: "btn btn-primary btn-sm raised" %></div>	
+		<div class="nav-btn"><%= link_to "Register User", register_path, class: "btn btn-primary btn-sm raised" %></div>
+		<div class="nav-btn"><%= link_to "View Projects", projects_path, class: "btn btn-primary btn-sm raised" %></div>
+		<div class="nav-btn"><%= link_to "New Project", new_project_path, class: "btn btn-primary btn-sm raised" %></div>
+	</div>
+
+	<div class="title right">
+		<h1><%= link_to "Drawing Club", root_path, class: "title-link" %></h1>
+	</div>
+</div>
+
+
+
+<div class="page-container">
+
+	<%= render 'layouts/messages' %>
+	
+	<%= yield %>
+	
+</div>
+
+</body>
+</html>

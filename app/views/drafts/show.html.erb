@@ -1,0 +1,11 @@
+<div class="head drafts center">
+<%= render 'common/title', title: @draft.name %>
+<%= link_to "Back to " + @project.name, project_path(@draft.project) %>
+</div>
+
+<div class="col-md-6 col-md-offset-3 center">
+	<%= @draft.description %>
+	
+	<%= link_to "Edit", edit_project_draft_path(@draft.project, @draft) %>
+	</div>
+</div> 

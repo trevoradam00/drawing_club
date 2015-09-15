@@ -1,0 +1,218 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.right {
+	float: right;
+}
+
+.center {
+	text-align: center;
+}
+
+.relative {
+	position: relative;
+}
+
+body {
+	background-color: #f4f4f4; /*#f9f9f9*/
+}
+
+.header {
+	width: 900px;
+	height: 50px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.title h1 {
+	letter-spacing: -2px;
+	font-weight: 700;
+	margin: 10px 40px;
+}
+
+.title-link,
+.title-link:hover,
+.title-link:active,
+.title-link:visited {
+	color: #000;
+	text-decoration: none;
+}
+
+.heading h3 {
+	
+}
+
+.nav-buttons {
+	margin-top: 20px;
+	padding-left: 60px;
+	width: 60%;
+}
+
+.nav-btn {
+	float: left;
+	margin-right: 15px;
+}
+
+.back-top {
+	width: 865px;
+	height: 30px;
+	z-index: -1;
+	position: absolute;
+	top: 41px;
+	left: 15px;
+	margin: 0 10px;
+	background-color: #e8e8e8;
+	border-radius: 8px 8px 0 0;
+}
+
+.page-container {
+	background-color: #fff;
+	min-height: 500px;
+	width: 900px;
+	margin: 0 auto 40px;
+	padding-bottom: 80px;
+	border-bottom: 1px solid #dfdfdf;
+	border-left: 1px solid #dfdfdf;
+	border-radius: 10px;
+}
+
+.title {
+	text-align: center;
+	background-color: #fff;
+	border-top: 1px solid #dfdfdf;
+	border-radius: 10px 10px 0 0;
+	margin-right: 30px;
+	margin-top: -10px;
+	padding: 0;
+}
+
+.heading {
+	text-align: center;
+}
+
+.head {
+	padding-top: 60px;
+	padding-bottom: 20px;
+}
+
+.alert {
+	background-color: #fff;
+	border: 0;
+	text-align: center;
+	color: #d33;
+	border-radius: 10px;
+	width: 30%;
+	margin: 0 auto;
+}	
+
+.alert p {
+ float: left;
+} 
+
+.alert .close {
+	float: right;
+	color: #d33;
+}
+
+.alert.error {
+	text-align: left;
+	width: 100%;
+	margin-top: -40px;
+	padding-left: 0;
+}
+
+.alert.error > ul {
+	list-style-type: circle;
+	padding-left: 15px;
+}
+
+.btn-primary,
+.btn-primary:visited {
+	background-color: #b9a8ca;
+}
+
+.btn-primary:hover {
+	background-color: #c2b3d2;
+}
+
+.btn-primary.raised {
+  box-shadow: 0 2px 0 0 #a291b4;
+  border: 1px solid #a291b4;
+}
+
+.btn-primary.raised:active, 
+.btn-primary.raised.active {
+  box-shadow: none;
+  margin-bottom: -2px;
+  margin-top: 2px;
+  border: 1px solid #9481a7;
+  background-color: #9481a7 !important;
+}
+
+.btn-primary.submit {
+  border: 1px solid #a291b4;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.btn-primary.submit:active, 
+.btn-primary.submit.active {
+  border: 1px solid #9481a7;
+  background-color: #9481a7 !important;
+
+}
+
+/*
+off: #9880af;
+border: #856c9c;
+on: #a18ab7;
+active: #7b5c97
+*/
+
+
+.form {
+	margin-top: 10px;
+}
+
+.form span {
+	display: block;
+	margin: 0 0 20px 0;
+}
+
+.form-label {
+	width: 15%;
+	vertical-align: top;
+	margin-top: 5px;
+}
+
+.form-field {
+	width: 84%;
+	border: 0;
+	background-color: #f3f3f3;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.field_with_errors {
+	width: 84%;
+	display: inline;
+}
+
+.user-list {
+	margin: 10px;
+}
+
+.name {
+	font-size: 1.4em;
+}
+
+.name i {
+	margin: 0 20px;
+}
+
+.user-email {
+	margin-right: 20px;
+}
+
+
+

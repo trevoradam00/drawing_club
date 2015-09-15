@@ -1,0 +1,18 @@
+<div class="head users">
+<%= render 'common/title', title: "Projects" %>
+</div>
+
+<% @projects.each do |project| %>
+	
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3">
+			<p class="project-list">
+			<span class="name"> 
+				<%= link_to project.name, project_path(project) %>
+			</span>
+			<span class="right"><%= project.description %></span>
+			</p>
+		</div>
+	</div>
+	
+<% end %>

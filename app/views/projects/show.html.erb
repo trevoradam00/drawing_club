@@ -1,0 +1,32 @@
+<div class="head users">
+<%= render 'common/title', title: @project.name %>
+</div>
+ 
+<div class="row">
+	<div class="col-md-6 col-md-offset-3 center">
+	<%= @project.description %>
+	
+	<%= link_to "Edit", edit_project_path(@project) %>
+	<br />
+	<%= link_to "Create a new draft", new_project_draft_path(@project) %>
+	</div>
+</div> 
+
+<br>
+
+<% @drafts.each do |draft| %>
+
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3">
+			<p class="project-list">
+			<span class="name">
+				<%= link_to draft.name, project_draft_path(@project, draft) %> 
+			</span>
+			<span class="right"><%= draft.description %>
+			</span>
+			</p>
+		</div>
+	</div>
+
+<% end %>
+
